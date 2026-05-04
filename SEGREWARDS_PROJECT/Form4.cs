@@ -20,6 +20,18 @@ namespace SEGREWARDS_PROJECT
 
             textBox1.GotFocus += TextBox1_GotFocus;
             textBox1.TextChanged += TextBox1_TextChanged;
+            buttonsignup.Click += Buttonsignup_Click;
+        }
+
+        private void Buttonsignup_Click(object sender, EventArgs e)
+        {
+            using (var waste = new Form5())
+            {
+                waste.ShowDialog(this);
+            }
+
+            RefreshEcoPointsHeader();
+            RunRewardSearch();
         }
 
         private void txtsearchbar_Load(object sender, EventArgs e)

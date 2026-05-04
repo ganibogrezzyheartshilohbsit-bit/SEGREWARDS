@@ -18,6 +18,7 @@ namespace SEGREWARDS_PROJECT
         {
             InitializeComponent();
             buttonsignup.Click += Buttonsignup_Click;
+            button1.Click += (sender, e) => pictureBox19_Click(sender, e);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
