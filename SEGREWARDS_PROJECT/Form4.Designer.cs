@@ -733,7 +733,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pic_lleafogo);
             this.Controls.Add(this.pictureBox2);
-            this.Enabled = false;
+            this.Enabled = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "txtsearchbar";
             this.Text = "Form4";

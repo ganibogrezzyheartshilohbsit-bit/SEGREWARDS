@@ -304,7 +304,39 @@
     <Compile Include="Form6.Designer.cs">
       <DependentUpon>Form6.cs</DependentUpon>
     </Compile>
+    <Compile Include="Composition\AppCompositionRoot.cs" />
+    <Compile Include="Data\IDbConnectionFactory.cs" />
+    <Compile Include="Data\MySqlConnectionFactory.cs" />
+    <Compile Include="Data\Repositories\AuditLogRepository.cs" />
+    <Compile Include="Data\Repositories\IAuditLogRepository.cs" />
+    <Compile Include="Data\Repositories\ILeaderboardRepository.cs" />
+    <Compile Include="Data\Repositories\IRewardCatalogRepository.cs" />
+    <Compile Include="Data\Repositories\IUserRepository.cs" />
+    <Compile Include="Data\Repositories\IWasteSubmissionRepository.cs" />
+    <Compile Include="Data\Repositories\IWasteTypeRepository.cs" />
+    <Compile Include="Data\Repositories\LeaderboardRepository.cs" />
+    <Compile Include="Data\Repositories\RewardCatalogRepository.cs" />
+    <Compile Include="Data\Repositories\UserRepository.cs" />
+    <Compile Include="Data\Repositories\WasteSubmissionRepository.cs" />
+    <Compile Include="Data\Repositories\WasteTypeRepository.cs" />
+    <Compile Include="Infrastructure\AppSession.cs" />
+    <Compile Include="Infrastructure\DatabaseConfig.cs" />
+    <Compile Include="Infrastructure\PasswordHasher.cs" />
+    <Compile Include="Models\LeaderboardRow.cs" />
+    <Compile Include="Models\RewardCatalogRecord.cs" />
+    <Compile Include="Models\UserRecord.cs" />
+    <Compile Include="Models\WasteSubmissionRecord.cs" />
+    <Compile Include="Models\WasteTypeRecord.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Services\AuthResult.cs" />
+    <Compile Include="Services\AuthService.cs" />
+    <Compile Include="Services\IAuthService.cs" />
+    <Compile Include="Services\IRewardSearchService.cs" />
+    <Compile Include="Services\IWasteSubmissionService.cs" />
+    <Compile Include="Services\RewardSearchService.cs" />
+    <Compile Include="Services\WasteSubmissionService.cs" />
+    <Compile Include="Services\WasteSubmitRequest.cs" />
+    <Compile Include="Services\WasteSubmitResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
