@@ -27,6 +27,7 @@ namespace SEGREWARDS_PROJECT.Composition
             Auth = new AuthService(Users, AuditLog);
             WasteSubmission = new WasteSubmissionService(Users, WasteTypes, WasteSubmissions, AuditLog);
             RewardSearch = new RewardSearchService(RewardCatalog);
+            RewardRedemption = new RewardRedemptionService(ConnectionFactory);
         }
 
         public IDbConnectionFactory ConnectionFactory { get; }
@@ -41,5 +42,6 @@ namespace SEGREWARDS_PROJECT.Composition
         public IAuthService Auth { get; }
         public IWasteSubmissionService WasteSubmission { get; }
         public IRewardSearchService RewardSearch { get; }
+        public IRewardRedemptionService RewardRedemption { get; }
     }
 }

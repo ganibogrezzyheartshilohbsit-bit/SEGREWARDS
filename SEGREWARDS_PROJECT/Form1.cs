@@ -69,5 +69,11 @@ namespace SEGREWARDS_PROJECT
                     MessageBoxIcon.Error);
             }
         }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            textBox3.PasswordChar = '*';
+            textBox3.UseSystemPasswordChar = true;
+        }
     }
 }

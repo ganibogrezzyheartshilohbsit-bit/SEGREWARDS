@@ -331,8 +331,11 @@
     <Compile Include="Services\AuthResult.cs" />
     <Compile Include="Services\AuthService.cs" />
     <Compile Include="Services\IAuthService.cs" />
+    <Compile Include="Services\IRewardRedemptionService.cs" />
     <Compile Include="Services\IRewardSearchService.cs" />
     <Compile Include="Services\IWasteSubmissionService.cs" />
+    <Compile Include="Services\RedeemResult.cs" />
+    <Compile Include="Services\RewardRedemptionService.cs" />
     <Compile Include="Services\RewardSearchService.cs" />
     <Compile Include="Services\WasteSubmissionService.cs" />
     <Compile Include="Services\WasteSubmitRequest.cs" />
@@ -364,6 +367,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -378,6 +382,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\user %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

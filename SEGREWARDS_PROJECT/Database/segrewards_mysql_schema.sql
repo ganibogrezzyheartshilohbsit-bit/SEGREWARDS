@@ -123,6 +123,7 @@ CREATE TABLE reward_catalog (
   name VARCHAR(255) NOT NULL,
   description TEXT NULL,
   points_cost INT NOT NULL,
+  image_path VARCHAR(512) NULL,
   is_active TINYINT(1) NOT NULL DEFAULT 1,
   sort_order INT NOT NULL DEFAULT 0,
   PRIMARY KEY (id),

@@ -1,28 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Shiloh\\OneDrive\\Desktop\\C#\\SEGREWARDS_PROJECT\\",
+  "WorkspaceRootPath": "C:\\Users\\Shiloh\\OneDrive\\Desktop\\SEGREWARDS\\SEGREWARDS\\SEGREWARDS_PROJECT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E6BCF996-7CB4-437C-B7CD-4005324B47D1}|SEGREWARDS_PROJECT.csproj|c:\\users\\shiloh\\onedrive\\desktop\\c#\\segrewards_project\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6BCF996-7CB4-437C-B7CD-4005324B47D1}|SEGREWARDS_PROJECT.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E6BCF996-7CB4-437C-B7CD-4005324B47D1}|SEGREWARDS_PROJECT.csproj|c:\\users\\shiloh\\onedrive\\desktop\\segrewards\\segrewards\\segrewards_project\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6BCF996-7CB4-437C-B7CD-4005324B47D1}|SEGREWARDS_PROJECT.csproj|solutionrelative:form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6BCF996-7CB4-437C-B7CD-4005324B47D1}|SEGREWARDS_PROJECT.csproj|c:\\users\\shiloh\\onedrive\\desktop\\c#\\segrewards_project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6BCF996-7CB4-437C-B7CD-4005324B47D1}|SEGREWARDS_PROJECT.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6BCF996-7CB4-437C-B7CD-4005324B47D1}|SEGREWARDS_PROJECT.csproj|c:\\users\\shiloh\\onedrive\\desktop\\segrewards\\segrewards\\segrewards_project\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6BCF996-7CB4-437C-B7CD-4005324B47D1}|SEGREWARDS_PROJECT.csproj|solutionrelative:form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6BCF996-7CB4-437C-B7CD-4005324B47D1}|SEGREWARDS_PROJECT.csproj|c:\\users\\shiloh\\onedrive\\desktop\\c#\\segrewards_project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6BCF996-7CB4-437C-B7CD-4005324B47D1}|SEGREWARDS_PROJECT.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E6BCF996-7CB4-437C-B7CD-4005324B47D1}|SEGREWARDS_PROJECT.csproj|c:\\users\\shiloh\\onedrive\\desktop\\segrewards\\segrewards\\segrewards_project\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6BCF996-7CB4-437C-B7CD-4005324B47D1}|SEGREWARDS_PROJECT.csproj|solutionrelative:form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|SEGREWARDS_PROJECT||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6BCF996-7CB4-437C-B7CD-4005324B47D1}|SEGREWARDS_PROJECT.csproj|c:\\users\\shiloh\\onedrive\\desktop\\c#\\segrewards_project\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6BCF996-7CB4-437C-B7CD-4005324B47D1}|SEGREWARDS_PROJECT.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6BCF996-7CB4-437C-B7CD-4005324B47D1}|SEGREWARDS_PROJECT.csproj|c:\\users\\shiloh\\onedrive\\desktop\\c#\\segrewards_project\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+      "AbsoluteMoniker": "D:0:0:{E6BCF996-7CB4-437C-B7CD-4005324B47D1}|SEGREWARDS_PROJECT.csproj|c:\\users\\shiloh\\onedrive\\desktop\\segrewards\\segrewards\\segrewards_project\\form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6BCF996-7CB4-437C-B7CD-4005324B47D1}|SEGREWARDS_PROJECT.csproj|solutionrelative:form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 308,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -41,12 +35,61 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form4.cs",
+              "DocumentMoniker": "C:\\Users\\Shiloh\\OneDrive\\Desktop\\SEGREWARDS\\SEGREWARDS\\SEGREWARDS_PROJECT\\Form4.cs",
+              "RelativeDocumentMoniker": "Form4.cs",
+              "ToolTip": "C:\\Users\\Shiloh\\OneDrive\\Desktop\\SEGREWARDS\\SEGREWARDS\\SEGREWARDS_PROJECT\\Form4.cs",
+              "RelativeToolTip": "Form4.cs",
+              "ViewState": "AgIAAFICAAAAAAAAAIAzwFYCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T12:15:35.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form6.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Shiloh\\OneDrive\\Desktop\\SEGREWARDS\\SEGREWARDS\\SEGREWARDS_PROJECT\\Form6.cs",
+              "RelativeDocumentMoniker": "Form6.cs",
+              "ToolTip": "C:\\Users\\Shiloh\\OneDrive\\Desktop\\SEGREWARDS\\SEGREWARDS\\SEGREWARDS_PROJECT\\Form6.cs [Design]",
+              "RelativeToolTip": "Form6.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T12:10:10.713Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form5.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Shiloh\\OneDrive\\Desktop\\SEGREWARDS\\SEGREWARDS\\SEGREWARDS_PROJECT\\Form5.cs",
+              "RelativeDocumentMoniker": "Form5.cs",
+              "ToolTip": "C:\\Users\\Shiloh\\OneDrive\\Desktop\\SEGREWARDS\\SEGREWARDS\\SEGREWARDS_PROJECT\\Form5.cs [Design]",
+              "RelativeToolTip": "Form5.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T12:10:08.539Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form4.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Shiloh\\OneDrive\\Desktop\\SEGREWARDS\\SEGREWARDS\\SEGREWARDS_PROJECT\\Form4.cs",
+              "RelativeDocumentMoniker": "Form4.cs",
+              "ToolTip": "C:\\Users\\Shiloh\\OneDrive\\Desktop\\SEGREWARDS\\SEGREWARDS\\SEGREWARDS_PROJECT\\Form4.cs [Design]",
+              "RelativeToolTip": "Form4.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T11:02:24.405Z",
+              "EditorCaption": " [Design]"
             }
           ]
         },
         {
           "DockedWidth": 92,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,66 +100,8 @@
               "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SEGREWARDS_PROJECT",
-              "DocumentMoniker": "C:\\Users\\Shiloh\\OneDrive\\Desktop\\C#\\SEGREWARDS_PROJECT\\SEGREWARDS_PROJECT.csproj",
-              "RelativeDocumentMoniker": "SEGREWARDS_PROJECT.csproj",
-              "ToolTip": "C:\\Users\\Shiloh\\OneDrive\\Desktop\\C#\\SEGREWARDS_PROJECT\\SEGREWARDS_PROJECT.csproj",
-              "RelativeToolTip": "SEGREWARDS_PROJECT.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-05-01T03:02:28.466Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Users\\Shiloh\\OneDrive\\Desktop\\C#\\SEGREWARDS_PROJECT\\Form2.cs",
-              "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "C:\\Users\\Shiloh\\OneDrive\\Desktop\\C#\\SEGREWARDS_PROJECT\\Form2.cs*",
-              "RelativeToolTip": "Form2.cs*",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T03:00:36.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form2.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Shiloh\\OneDrive\\Desktop\\C#\\SEGREWARDS_PROJECT\\Form2.cs",
-              "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "C:\\Users\\Shiloh\\OneDrive\\Desktop\\C#\\SEGREWARDS_PROJECT\\Form2.cs [Design]*",
-              "RelativeToolTip": "Form2.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T02:33:48.863Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Shiloh\\OneDrive\\Desktop\\C#\\SEGREWARDS_PROJECT\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Shiloh\\OneDrive\\Desktop\\C#\\SEGREWARDS_PROJECT\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAQwCQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T02:07:10.309Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Shiloh\\OneDrive\\Desktop\\C#\\SEGREWARDS_PROJECT\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Shiloh\\OneDrive\\Desktop\\C#\\SEGREWARDS_PROJECT\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T02:04:14.418Z",
-              "EditorCaption": " [Design]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             }
           ]
         }
