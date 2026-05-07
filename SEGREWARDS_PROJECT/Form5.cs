@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using SEGREWARDS_PROJECT.Composition;
 using SEGREWARDS_PROJECT.Infrastructure;
 using SEGREWARDS_PROJECT.Services;
+using SEGREWARDS_PROJECT.UserControls;
 
 namespace SEGREWARDS_PROJECT
 {
@@ -14,11 +15,26 @@ namespace SEGREWARDS_PROJECT
         private string _proofMime;
         private string _proofFileName;
 
-        public Form5()
+        private UserControl _currentPage;
+        private SubmitWastePage _submitWastePage;
+        private DashboardPage _dashboardPage;
+        private RewardsPage _rewardsPage;
+        private LeaderboardPage _leaderboardPage;
+        private ProfilePage _profilePage;
+        private readonly string _initialPageKey;
+
+        public Form5(string initialPageKey = null)
         {
+            _initialPageKey = initialPageKey;
             InitializeComponent();
             buttonsignup.Click += Buttonsignup_Click;
             button1.Click += (sender, e) => pictureBox19_Click(sender, e);
+
+            dashboardBtn.Click += (s, e) => OpenDashboard();
+            submitWasteBtn.Click += (s, e) => ShowPage(GetSubmitWastePage());
+            rewardsBtn.Click += (s, e) => OpenRewards();
+            leaderboardsBtn.Click += (s, e) => ShowPage(GetLeaderboardPage());
+            profileBtn.Click += (s, e) => ShowPage(GetProfilePage());
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -37,6 +53,171 @@ namespace SEGREWARDS_PROJECT
         {
             TryPrefillFromSession();
             TryRefreshHeaderPoints();
+            RefreshUserHeader();
+
+            // Default/initial page
+            if (string.Equals(_initialPageKey, "dashboard", StringComparison.OrdinalIgnoreCase))
+            {
+                OpenDashboard();
+            }
+            else if (string.Equals(_initialPageKey, "rewards", StringComparison.OrdinalIgnoreCase))
+            {
+                OpenRewards();
+            }
+            else if (string.Equals(_initialPageKey, "leaderboard", StringComparison.OrdinalIgnoreCase) ||
+                     string.Equals(_initialPageKey, "leaderboards", StringComparison.OrdinalIgnoreCase))
+            {
+                ShowPage(GetLeaderboardPage());
+            }
+            else if (string.Equals(_initialPageKey, "profile", StringComparison.OrdinalIgnoreCase))
+            {
+                ShowPage(GetProfilePage());
+            }
+            else
+            {
+                ShowPage(GetSubmitWastePage());
+            }
+        }
+
+        private void OpenDashboard()
+        {
+            Hide();
+            try
+            {
+                using (var dashboard = new Form3())
+                {
+                    dashboard.ShowDialog(this);
+                }
+            }
+            finally
+            {
+                Show();
+            }
+        }
+
+        private void OpenRewards()
+        {
+            Hide();
+            try
+            {
+                using (var rewards = new txtsearchbar())
+                {
+                    rewards.ShowDialog(this);
+                }
+            }
+            finally
+            {
+                Show();
+            }
+        }
+
+        private void ShowPage(UserControl page)
+        {
+            if (page == null) return;
+
+            panelMainContent.SuspendLayout();
+            try
+            {
+                panelMainContent.Controls.Clear();
+                panelMainContent.Controls.Add(page);
+                page.Dock = DockStyle.Fill;
+                _currentPage = page;
+            }
+            finally
+            {
+                panelMainContent.ResumeLayout(true);
+            }
+
+            // Keep header/sidebar visible above the page host.
+            panelsidebar.BringToFront();
+            pictureBox9.BringToFront();
+            pictureBox8.BringToFront();
+            label8.BringToFront();
+            label7.BringToFront();
+            pictureBox16.BringToFront();
+            pictureBox7.BringToFront();
+            label12.BringToFront();
+            label9.BringToFront();
+            label10.BringToFront();
+            pictureBox10.BringToFront();
+        }
+
+        private UserControl GetSubmitWastePage()
+        {
+            if (_submitWastePage != null) return _submitWastePage;
+
+            // Move existing Submit Waste UI into a page (so it becomes navigable).
+            if (pictureBox6.Parent != null) pictureBox6.Parent.Controls.Remove(pictureBox6);
+            if (panel1.Parent != null) panel1.Parent.Controls.Remove(panel1);
+            if (button2.Parent != null) button2.Parent.Controls.Remove(button2);
+
+            _submitWastePage = new SubmitWastePage(pictureBox6, panel1, button2);
+            return _submitWastePage;
+        }
+
+        private UserControl GetDashboardPage()
+        {
+            return _dashboardPage ?? (_dashboardPage = new DashboardPage());
+        }
+
+        private UserControl GetRewardsPage()
+        {
+            return _rewardsPage ?? (_rewardsPage = new RewardsPage());
+        }
+
+        private UserControl GetLeaderboardPage()
+        {
+            return _leaderboardPage ?? (_leaderboardPage = new LeaderboardPage());
+        }
+
+        private UserControl GetProfilePage()
+        {
+            return _profilePage ?? (_profilePage = new ProfilePage());
+        }
+
+        private void RefreshUserHeader()
+        {
+            if (AppSession.CurrentUserId == null)
+            {
+                return;
+            }
+
+            // Hydrate session and header from DB (best-effort).
+            try
+            {
+                var user = AppCompositionRoot.Instance.Users.GetById(AppSession.CurrentUserId.Value);
+                if (user != null)
+                {
+                    AppSession.CurrentStudentNumber = user.StudentNumber;
+                    AppSession.CurrentFullName = user.FullName;
+                    AppSession.CurrentEcoPoints = user.EcoPointsBalance;
+
+                    label7.Text = user.EcoPointsBalance.ToString("N0");
+                    label9.Text = user.FullName;
+                }
+            }
+            catch
+            {
+                // Header is optional if DB is offline.
+            }
+
+            // Profile image (persisted from registration)
+            try
+            {
+                pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+                var profile = AppSession.TryLoadProfileImage(AppSession.CurrentStudentNumber);
+                if (profile != null)
+                {
+                    var old = pictureBox7.Image;
+                    pictureBox7.BackgroundImage = null;
+                    pictureBox7.Image = profile;
+                    old?.Dispose();
+                }
+            }
+            catch
+            {
+                // Ignore profile image failures.
+            }
         }
 
         private void TryPrefillFromSession()
@@ -90,6 +271,9 @@ namespace SEGREWARDS_PROJECT
 
                 label7.Text = user.EcoPointsBalance.ToString("N0");
                 label9.Text = user.FullName;
+                AppSession.CurrentEcoPoints = user.EcoPointsBalance;
+                AppSession.CurrentFullName = user.FullName;
+                AppSession.CurrentStudentNumber = user.StudentNumber;
             }
             catch
             {
@@ -251,6 +435,26 @@ namespace SEGREWARDS_PROJECT
             {
                 MessageBox.Show(this, ex.Message, "Database", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void leaderboardsBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dashboardBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void submitWasteBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
